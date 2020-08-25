@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Contact me!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Write to me!</h2>
+      <div class="form-body">
+        <form action="/contact" method="POST">
+          <div class="form-element">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" />
+          </div>
+          <div class="form-element">
+            <label for="email">Enter your email: </label>
+            <input type="text" name="email" />
+          </div>
+          <div class="form-element">
+            <label for="message">Enter your message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
