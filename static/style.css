@@ -1,5 +1,5 @@
 body {
-  background-color: purple;
+  background-color: #470024;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -28,5 +28,26 @@ body {
   box-shadow: black;
 }
 
-.form-body {
+/* .form-body {
+} */
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0px 250px;
+}
+
+.card {
+  background-color: #251101;
+  border: #5b1865 solid;
+  border-radius: 5px;
+  width: 300px;
+  height: 500px;
+}
+
+.card-description {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
