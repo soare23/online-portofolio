@@ -1,53 +1,112 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
 body {
-  background-color: #470024;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: #e0e0e0;
+  margin: 0;
 }
-
-.title {
+nav {
+  width: 100%;
+  position: fixed;
+  background-color: #ca3e47;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-end;
+  border: 2px solid;
 }
-
-.intro {
+nav ul {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  color: black;
 }
-
-.container {
-  /* margin-top: 50px; */
-  width: 80%;
+a {
+  margin: 30px;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #dfcdc3;
+}
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100vh;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: black;
+  font-size: 3rem;
+  background-color: #313131;
 }
-
-/* .form-body {
-} */
-
-.card-container {
+.welcome-section p {
+  font-style: italic;
+  font-weight: 200;
+}
+h2 {
+  text-align: center;
+}
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+}
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  text-decoration: none;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.project-image {
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  border-radius: 20px;
+}
+.project-title {
+  color: #272121;
+  background-color: #ca3e47;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+.contact-section-header {
+  text-align: center;
+  background-color: #313131;
+}
+.contact-section {
+  text-align: center;
+  background-color: #313131;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #dfcdc3;
+}
+footer {
+  background-color: #313131;
+  border-top: 4px solid #ca3e47;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  margin: 0px 250px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
 }
-
-.card {
-  background-color: #251101;
-  border: #5b1865 solid;
-  border-radius: 5px;
-  width: 300px;
-  height: 500px;
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
-
-.card-description {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+footer > p {
+  margin: 2rem;
+}
+footer i {
+  vertical-align: middle;
 }
