@@ -19,6 +19,26 @@ def contact_me():
     return render_template('contact.html')
 
 
+@app.route('/python', methods=["GET", "POST"])
+def python_projects():
+    return "This are my python projects"
+
+
+@app.route('/front')
+def front_projects():
+    return render_template('front_projects.html')
+
+
+@app.route('/javascript')
+def javascript_projects():
+    return "This are my Javascript projects"
+
+
+@app.route('/full_stack')
+def full_stack_projects():
+    return "This are my Full stack projects"
+
+
 def main():
     app.run(debug=True)
 
