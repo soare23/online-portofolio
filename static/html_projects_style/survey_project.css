@@ -1,0 +1,94 @@
+html,
+body {
+  background-color: #fefbd8;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
+  font-size: 10px;
+  color: #618685;
+}
+
+#main {
+  background-color: #d5f4e6;
+  padding: 5px;
+  max-width: 900px;
+  border: solid;
+  margin: auto;
+}
+#title {
+  font-size: 3rem;
+}
+#description {
+  font-size: 2rem;
+}
+.form-input {
+  margin: center;
+}
+.input-field {
+  width: 250px;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 20px;
+  text-align: center;
+}
+.form-text {
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+  padding: 5px;
+  margin: 5px;
+  font-size: 2rem;
+}
+#question-dropdown {
+  font-size: 2.5rem;
+  padding: 15px;
+}
+.selector {
+  padding: 10px;
+}
+.dropdown {
+  border: 1px solid;
+  border-radius: 5px;
+}
+#question {
+  font-size: 2rem;
+  padding: 10px;
+  margin-left: 110px;
+  display: flex;
+  height: 50px;
+  margin-top: 15px;
+  width: 300px;
+}
+.radio-input {
+  display: flex;
+  font-size: 1.5rem;
+  padding: 0px 0px 0px 5px;
+  margin: 5px;
+}
+#radio {
+  display: flex;
+}
+.checkbox-input {
+  display: flex;
+  font-size: 1.5rem;
+  padding: 0px 0px 0px 5px;
+  margin: 5px;
+}
+#checkbox {
+  display: flex;
+  width: 66.5%;
+}
+#comments {
+  display: flex;
+  margin: 10px 0px 0px 53px;
+}
+.text-area {
+  display: flex;
+}
+#submit {
+  border-radius: 2px;
+  width: 70px;
+  font-size: 1.5rem;
+  color: #618685;
+  background-color: #80ced6;
+}

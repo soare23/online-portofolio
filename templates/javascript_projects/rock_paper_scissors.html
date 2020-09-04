@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock, Paper, Scissors</title>
+    <meta charset="UTF-8" />
+    <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
+    <link
+      rel="icon"
+      href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
+    />
+    <link rel="stylesheet" href="/static/sticky_element.css" />
+    <link rel="stylesheet" href="/static/rock_paper_scissors.css" />
+  </head>
+  <body>
+    <div class="sticky">
+      <a href="/javascript" style="color: black"> BACK TO PORTOFOLIO</a>
+    </div>
+    <header>Rock Paper Scissors</header>
+    <div class="container">
+      <div>
+        <div class="scoreboard">
+          <span class="user">USER</span>
+          <div style="justify-content: space-between">
+            <span id="user-score"> 0 </span> :
+            <span id="computer-score"> 0 </span>
+          </div>
+          <span class="computer">COMP</span>
+        </div>
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <div class="chosen_option" id="user">
+            <img
+              id="user_image"
+              src="/static/rock_paper_scissors_imgs/rock_choice.png"
+              alt="rock"
+            />
+          </div>
+          <span class="versus">VS</span>
+          <div class="chosen_option" id="computer">
+            <img
+              id="comp_image"
+              src="/static/rock_paper_scissors_imgs/rock_choice.png"
+              alt="rock"
+            />
+          </div>
+        </div>
+        <div class="game_options">
+          <div class="choices" id="rock_choice">
+            <img
+              src="/static/rock_paper_scissors_imgs/rock_choice.png"
+              alt="rock"
+            />
+          </div>
+          <div class="choices" id="paper_choice">
+            <img
+              src="/static/rock_paper_scissors_imgs/paper_choice.png"
+              alt="paper"
+            />
+          </div>
+          <div class="choices" id="scissors_choice">
+            <img
+              src="/static/rock_paper_scissors_imgs/scissors_choice.png"
+              alt="scissors"
+            />
+          </div>
+        </div>
+        <div style="margin-top: 20px">
+          <h2>Choose one of the options above to start</h2>
+        </div>
+        <div class="message">BEGIN</div>
+      </div>
+    </div>
+    <script src="/static/javascript/rock_paper_scissors.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  </body>
+</html>

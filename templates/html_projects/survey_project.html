@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/html_projects_style/survey_project.css">
+        <link rel="stylesheet" href="/static/sticky_element.css">
+    </head>
+    <div id="main">
+    <h1 id="title"> Music Survey</h1>
+    <div class="sticky">
+        <a href="/front" style="font-size: 1.5em">
+        BACK TO PORTOFOLIO</a>
+      </div>
+
+    <p id="description"> Please fill up the music survey </p>
+    <form id="survey-form" action="">
+        <div class="form-input">
+        <div class="form-text"><label for="name" id="name-label">Name:</label></div>
+        <input class="input-field" id="name" type="text" placeholder="Enter your name here" required></div>
+
+        <div class="form-input">
+        <div class="form-text"><label for="email" id="email-label">Email:</label></div>
+        <input class="input-field" id="email" type="email" placeholder="Enter your email here" required></div>
+
+        <div class="form-input">
+        <div class="form-text"><label for="age" id="number-label">Age:</label></div>
+        <input class="input-field" id="number" type="number" min="1" max="120" placeholder="Enter your age here" required></div>
+        <div id="question-dropdown">
+        Do you listen to music?
+        <div class="selector"><select id="dropdown" name="dropdown" class="dropdown">
+        <option disabled value> Select one:</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+            <option value="huh">I love music!</option>
+            </div>
+            </select>
+        </div>
+        <table>
+            <div id="radio">
+            <div id="question">Who is your favorite band?</div>
+
+            <ul id="radio-list" style="list-style:none">
+                <li class="radio-input">
+                <input type="radio" name="fav-singer" value="1"> Queen </input>
+                </li>
+                <li class="radio-input">
+                <input type="radio" name="fav-singer" value="2"> AC/Dc </input>
+                </li>
+                <li class="radio-input">
+                <input type="radio" name="fav-singer" value="2"> Rolling Stones </input>
+                </li>
+            </ul>
+            </div>
+
+            <div id="checkbox">
+            <div id="question"> What are the best characteristics for a good band?*</div>
+            <ul style="list-style:none" id="checkbox-list">
+                <li class="checkbox-input">
+                <input type="checkbox" name="characts" value="1"> Voice</input>
+                </li>
+                <li class="checkbox-input">
+                <input type="checkbox" name="characts" value="1"> Tone</input>
+                </li>
+                <li class="checkbox-input">
+                <input type="checkbox" name="characts" value="1"> Passion</input>
+                </li>
+                <li class="checkbox-input">
+                <input type="checkbox" name="characts" value="1"> Energy</input>
+                </li>
+            </ul>
+            </div>
+            <div class="text-area">
+            <div id="question">
+                Any comments or suggestions?
+            </div>
+
+            <div class="comment-box">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical; text-align:left" name="comments" placeholder="Enter your comments here..."></textarea></div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+    </form>
+    </div>
+</html>

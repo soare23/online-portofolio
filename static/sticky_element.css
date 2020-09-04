@@ -1,0 +1,21 @@
+.sticky {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 5px;
+  background-color: #ca3e47;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+}
+
+.sticky a {
+  font-size: 0.7em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  padding: 0;
+  margin: 5px;
+}
