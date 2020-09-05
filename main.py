@@ -17,12 +17,12 @@ def contact_me():
     if request.method == "POST":
         name = request.form.get('name')
         message = request.form.get('message')
+        subject = request.form.get('subject')
         with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
             smtp.ehlo()
             smtp.starttls()
             smtp.ehlo()
             smtp.login(email, password)
-            subject = "You have a new contact email from"
             sender = name
             body = message
             msg = f'Subject: {subject} - {sender}\n\n{body}'
