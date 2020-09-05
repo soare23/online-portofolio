@@ -1,5 +1,8 @@
 from flask import Flask, render_template, url_for, request, redirect, jsonify, flash, session, escape
+from decouple import config
+import smtplib
 app = Flask(__name__)
+app.secret_key = config('PORTOFOLIO_SECRET_KEY')
 
 
 @app.route('/')
@@ -9,13 +12,23 @@ def hello_world():
 
 @app.route('/contact', methods=["POST", "GET"])
 def contact_me():
+    email = config('PORTOFOLIO_EMAIL')
+    password = config('PORTOFOLIO_EMAIL_PASS')
     if request.method == "POST":
         name = request.form.get('name')
-        email = request.form.get('email')
         message = request.form.get('message')
-        print(name)
-        print(email)
-        print(message)
+        with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+            smtp.ehlo()
+            smtp.starttls()
+            smtp.ehlo()
+            smtp.login(email, password)
+            subject = "You have a new contact email from"
+            sender = name
+            body = message
+            msg = f'Subject: {subject} - {sender}\n\n{body}'
+            smtp.sendmail(email, 'toma.mihai.sorin23@gmail.com', msg)
+            flash('Thank you for contacting me! I will get back to you shortly!')
+            return redirect(url_for('contact_me'))
     return render_template('contact.html')
 
 
