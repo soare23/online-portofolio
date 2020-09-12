@@ -7,7 +7,7 @@ app.secret_key = config('PORTOFOLIO_SECRET_KEY')
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    return render_template('index-bootstrap.html')
 
 
 @app.route('/contact', methods=["POST", "GET"])
@@ -35,29 +35,9 @@ def contact_me():
 
                 {body}'''
             smtp.sendmail(email, 'toma.mihai.sorin23@gmail.com', msg)
-            flash('Thank you for contacting me! I will get back to you shortly!')
+            flash('Awesome! I\'ll come back to you shortly!')
             return redirect(url_for('contact_me'))
-    return render_template('contact.html')
-
-
-@app.route('/python', methods=["GET", "POST"])
-def python_projects():
-    return "This are my python projects"
-
-
-@app.route('/front')
-def front_projects():
-    return render_template('front_projects.html')
-
-
-@app.route('/javascript')
-def javascript_projects():
-    return render_template('javascript_projects.html')
-
-
-@app.route('/full_stack')
-def full_stack_projects():
-    return "This are my Full stack projects"
+    return render_template('contact-bootstrap.html')
 
 
 @app.route('/landing_page_project')
