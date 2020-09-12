@@ -18,6 +18,7 @@ def contact_me():
         name = request.form.get('name')
         message = request.form.get('message')
         subject = request.form.get('subject')
+        userEmail = request.form.get('email')
         with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
             smtp.ehlo()
             smtp.starttls()
@@ -25,7 +26,14 @@ def contact_me():
             smtp.login(email, password)
             sender = name
             body = message
-            msg = f'Subject: {subject} - {sender}\n\n{body}'
+            email_to_send = userEmail
+            msg = f'''Subject: {subject}
+
+
+                From: {email_to_send}
+                Sender name: {sender}
+
+                {body}'''
             smtp.sendmail(email, 'toma.mihai.sorin23@gmail.com', msg)
             flash('Thank you for contacting me! I will get back to you shortly!')
             return redirect(url_for('contact_me'))
@@ -75,6 +83,16 @@ def tribute_page():
 @app.route('/rock_paper_scissors')
 def rock_paper_scissors():
     return render_template('/javascript_projects/rock_paper_scissors.html')
+
+
+@app.route('/form_validator')
+def form_validator():
+    return render_template('/javascript_projects/form_validator.html')
+
+
+@app.route('/exchange_rate')
+def exchange_rate():
+    return render_template('/javascript_projects/exchange_rate.html')
 
 
 def main():
