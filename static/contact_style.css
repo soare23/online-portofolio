@@ -9,6 +9,7 @@
 
 /* Style inputs with type="text", select elements and textareas */
 input[type='text'],
+input[type='email'],
 select,
 textarea {
   width: 100%; /* Full width */
