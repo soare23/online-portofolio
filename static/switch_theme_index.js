@@ -91,7 +91,6 @@ function checkCurrentTheme() {
       cardText.style.color = '#3a3f44';
     });
     cards.forEach((card) => {
-      console.log(card);
       card.className = 'card text-white bg-light mb-3';
     });
     listItems.forEach((listItem) => {
@@ -113,7 +112,6 @@ function checkCurrentTheme() {
       cardText.style.color = '#aaa';
     });
     cards.forEach((card) => {
-      console.log(card);
       card.className = 'card mb-3';
     });
     listItems.forEach((listItem) => {
@@ -125,4 +123,19 @@ function checkCurrentTheme() {
   }
 }
 
-// #5bc0de
+// Mobile friendly menu?
+
+// let navbarToggler = document.getElementsByClassName('.navbar-toggler');
+
+// if (
+//   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+//     navigator.userAgent
+//   )
+// ) {
+//   // true for mobile device
+//   console.log('mobile');
+//   navbarToggler.addEventListener('click', () => {});
+// } else {
+//   // false for not mobile device
+//   console.log('not mobile');
+// }
