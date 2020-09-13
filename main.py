@@ -75,9 +75,6 @@ def exchange_rate():
     return render_template('/javascript_projects/exchange_rate.html')
 
 
-def main():
-    app.run()
-
-
 if __name__ == '__main__':
-    main()
+    app.debug = True
+    app.run()
