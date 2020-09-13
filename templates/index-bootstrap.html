@@ -26,8 +26,8 @@
     />
     <title>soare.works</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
       <a class="navbar-brand" href="#">soare.works</a>
       <button
         class="navbar-toggler"
@@ -43,6 +43,14 @@
 
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item" style="margin: auto">
+            <div class="form-group" style="margin: auto; padding:10px">
+              <div class="custom-control custom-switch" id="switch-theme-body">
+                <input type="checkbox" class="custom-control-input" id="switchButton" checked="">
+                <label class="custom-control-label text-muted" for="switchButton">Dark Mode</label>
+              </div>
+            </div>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#"
               >Home <span class="sr-only">(current)</span></a
@@ -57,20 +65,20 @@
         </ul>
       </div>
     </nav>
-    <div class="jumbotron">
-      <h1 class="display-3">Hi, <br>I am Soare,</h1>
+    <div class="jumbotron" id="jumbotron">
+      <h1 class="display-3" id="greeting">Hi, <br>I am Soare,</h1>
     </div>
     <h2 class="about">About me</h2>
     <hr style="background-color: #e9ecef;">
     <div>
-      <h4 class="about card text-muted bg-dark mb-3">
+      <h4 class="about card text-muted bg-dark mb-3" id="about_me">
         In February 2020 I have decided to give up on my sales career and become
         a full stack developer. So far the technologies that I am familiar with
         are Python, Flask, HTML/CSS, JavaScript and PostgreSQL. <br /><br />
         The next step is getting comfortable with either one of the big JS
         frameworks like Vue/React or Angular.
         <br /><br />
-        My short term goal is to join a big company where I can grow and furture
+        My short term goal is to join a big company where I can grow and 
         develop. As a long term goal, I would like to combine my sales knowledge
         with my newly acquired IT skills and become a successful freelancer
         either by myself or by owning a small company and building projects.
@@ -79,111 +87,95 @@
     <h3 class="display-4">Take a look at some of my projects</h3>
       <div class="row mb-5">
         <div class="col-md">
-          <div class="card mb-3 ml-3 mr-3">
-            <h3 class="card-header" style="text-align: center">
+          <div class="card mb-3 ml-3 mr-3" id="card">
+            <h3 class="card-header" style="text-align: center" id="card-header">
               Python Projects
             </h3>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-            </div>
             <img
               style="height: 200px; width: 150px; display: block; margin: auto"
               src="/static/imgs/python_logo.png"
               alt="Card image"
             />
             <div class="card-body">
-              <p class="card-text">
+              <p class="card-text" id="card-text">
                 Click the links below and check the GitHub repos for some of my Python Projects.
               </p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Hangman Game</li>
-              <li class="list-group-item">Game Inventory</li>
+              <li class="list-group-item" id='list-group-item'>Hangman Game</li>
+              <li class="list-group-item" id='list-group-item'>Game Inventory</li>
             </ul>
           </div>
         </div>
         <div class="col-md">
-          <div class="card mb-3 ml-3 mr-3">
-                <h3 class="card-header" style="text-align: center">
+          <div class="card mb-3 ml-3 mr-3" id="card">
+                <h3 class="card-header" style="text-align: center" id="card-header">
                 HTML/CSS Projects
                 </h3>
-                <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                </div>
                 <img
                 style="height: 200px; width: 150px; display: block; margin: auto"
                 src="/static/imgs/html_css_logo.png"
                 alt="Card image"
                 />
                 <div class="card-body">
-                <p class="card-text">
+                <p class="card-text" id="card-text">
                     Click one of the links below to check the project. If you want to get back here, just click the "Back to Portofolio" button.
                 </p>
                 </div>
                 <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="/landing_page_project">Landing Page</a></li>
-                <li class="list-group-item"><a href="/tribute_page">Tribute Page</a></li>
-                <li class="list-group-item"><a href="/survey_project">Music Survey</a></li>
+                <li class="list-group-item" id='list-group-item'><a href="/landing_page_project">Landing Page</a></li>
+                <li class="list-group-item" id='list-group-item'><a href="/tribute_page">Tribute Page</a></li>
+                <li class="list-group-item" id='list-group-item'><a href="/survey_project">Music Survey</a></li>
                 </ul>
           </div>
         </div>
         <div class="col-md">
-          <div class="card mb-3 ml-3 mr-3">
-                <h3 class="card-header" style="text-align: center">
+          <div class="card mb-3 ml-3 mr-3" id="card">
+                <h3 class="card-header" style="text-align: center" id="card-header">
                 JavaScript Projects
                 </h3>
-                <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                </div>
                 <img
                 style="height: 200px; width: 150px; display: block; margin: auto"
                 src="/static/imgs/javascript_logo.png"
                 alt="Card image"
                 />
                 <div class="card-body">
-                <p class="card-text">
+                <p class="card-text" id="card-text">
                     Click one of the links below to check the project. If you want to get back here, just click the "Back to Portofolio" button.
                 </p>
                 </div>
                 <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="/rock_paper_scissors">Rock, paper, scissors</a></li>
-                <li class="list-group-item"><a href="/form_validator">Form validator</a></li>
-                <li class="list-group-item"><a href="/exchange_rate">Curreny exchange</a></li>
+                <li class="list-group-item" id='list-group-item'><a href="/rock_paper_scissors">Rock, paper, scissors</a></li>
+                <li class="list-group-item" id='list-group-item'><a href="/form_validator">Form validator</a></li>
+                <li class="list-group-item" id='list-group-item'><a href="/exchange_rate">Curreny exchange</a></li>
                 </ul>
           </div>
         </div>
         <div class="col-md">
-          <div class="card mb-3 ml-3 mr-3">
-                <h3 class="card-header" style="text-align: center">
+          <div class="card mb-3 ml-3 mr-3" id="card">
+                <h3 class="card-header" style="text-align: center" id="card-header">
                 Full Stack Projects
                 </h3>
-                <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                </div>
                 <img
                 style="height: 200px; width: 150px; display: block; margin: auto"
                 src="/static/imgs/full_stack_logo.png"
                 alt="Card image"
                 />
                 <div class="card-body">
-                <p class="card-text">
+                <p class="card-text" id="card-text">
                     For my full stack projects, click any of the links below and you will be taken to the GitHub repo.
                 </p>
                 </div>
                 <ul class="list-group list-group-flush">
-                <li class="list-group-item">API Wars</li>
-                <li class="list-group-item">IMDB-like Clone</li>
+                <li class="list-group-item" id='list-group-item'>API Wars</li>
+                <li class="list-group-item" id='list-group-item'>IMDB-like Clone</li>
                 </ul>
           </div>
         </div>
     </div>
 
 
-    <div class="navbar navbar-light bg-light footer">
+    <div class="navbar navbar-light bg-light footer" id="footer">
         <div class="navbar-brand">
          <h3 class="text-muted" style="margin: auto;">Let's work together!</h3>
         </div>
@@ -213,7 +205,7 @@
     </div>
 
 
-
+    <script src="/static/switch_theme_index.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </body>
 </html>

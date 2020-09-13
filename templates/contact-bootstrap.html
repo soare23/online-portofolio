@@ -26,8 +26,8 @@
     />
     <title>Contact me</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
       <a class="navbar-brand" href="/">soare.works</a>
       <button
         class="navbar-toggler"
@@ -43,6 +43,14 @@
 
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item" style="margin: auto;">
+            <div class="form-group" style="margin: auto; padding:10px">
+              <div class="custom-control custom-switch" id="switch-theme-body">
+                <input type="checkbox" class="custom-control-input" id="switchButton" checked="">
+                <label class="custom-control-label text-muted" for="switchButton">Dark Mode</label>
+              </div>
+            </div>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="/">Go back</a>
           </li>
@@ -54,8 +62,8 @@
         </ul>
       </div>
     </nav>
-    <div class="jumbotron">
-      <h1 class="display-3">Contact me</h1>
+    <div class="jumbotron" id="jumbotron">
+      <h1 class="display-3" id="greeting">Contact me,</h1>
     </div>
     {% with messages = get_flashed_messages() %}
           {% if messages %}
@@ -66,67 +74,69 @@
             {% endfor %}
           {% endif %}
         {% endwith %}
-    <div class="card-contact">
+    <div class="card-contact m-auto">
       <form action="/contact" method="POST">
-        <fieldset class="contact_field">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              aria-describedby="nameHelp"
-              placeholder="Your name..."
-              name="name"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              aria-describedby="emailHelp"
-              placeholder="Your email..."
-              name="email"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Subject</label>
-            <input
-              type="text"
-              class="form-control"
-              id="subject"
-              aria-describedby="subjectHelp"
-              placeholder="Subject..."
-              name="subject"
-            />
-          </div>
-          <div class="form-group">
-                <label for="message">Enter your message</label>
-                <textarea
-                class="form-control"
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Your message..."
-                ></textarea>
-            </div>
-            <div style="display: flex; justify-content: center;">
-                <input
-                type="submit"
-                class="btn btn-primary"
-                style="width: 65%; margin: 20px"
-                />
-            </div>
-          </div>
-        </fieldset>
+          <fieldset class="contact_field">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      aria-describedby="nameHelp"
+                      placeholder="Your name..."
+                      name="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      placeholder="Your email..."
+                      name="email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      aria-describedby="subjectHelp"
+                      placeholder="Subject..."
+                      name="subject"
+                    />
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Enter your message</label>
+                      <textarea
+                      class="form-control"
+                      name="message"
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Your message..."
+                      ></textarea>
+                  </div>
+                  <div style="display: flex; justify-content: center;">
+                      <input
+                      type="submit"
+                      class="btn btn-primary"
+                      style="width: 65%; margin: 20px"
+                      id="submit_button"
+                      />
+                  </div>
+          </fieldset>
       </form>
     </div>
 
+    <div style="flex: 1;"></div>
+
     
-    <div class="navbar navbar-light bg-light footer">
+    <div class="navbar navbar-light bg-light footer" id="footer">
         <div class="navbar-brand">
          <h3 class="text-muted" style="margin: auto;">Let's work together!</h3>
         </div>
@@ -155,6 +165,7 @@
       </div>
     </div>
 
-
+  
+  <script src="/static/switch_theme_contact.js"></script>
   </body>
 </html>

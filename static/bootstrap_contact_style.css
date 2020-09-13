@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .card-contact {
   position: relative;
   display: -webkit-box;
@@ -11,6 +17,8 @@
   word-wrap: break-word;
   background-clip: border-box;
   padding: 50px;
+  max-width: 100%;
+  width: 750px;
 }
 
 .submit_button {
