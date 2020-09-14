@@ -39,7 +39,6 @@ function changeTheme() {
       cardText.style.color = '#3a3f44';
     });
     cards.forEach((card) => {
-      console.log(card);
       card.className = 'card text-white bg-light mb-3 ml-3 mr-3';
     });
     listItems.forEach((listItem) => {
@@ -61,7 +60,6 @@ function changeTheme() {
       cardText.style.color = '#aaa';
     });
     cards.forEach((card) => {
-      console.log(card);
       card.className = 'card mb-3 ml-3 mr-3';
     });
     listItems.forEach((listItem) => {
@@ -91,7 +89,7 @@ function checkCurrentTheme() {
       cardText.style.color = '#3a3f44';
     });
     cards.forEach((card) => {
-      card.className = 'card text-white bg-light mb-3';
+      card.className = 'card text-white bg-light mb-3 ml-3 mr-3';
     });
     listItems.forEach((listItem) => {
       listItem.style.backgroundColor = '#5bc0de';
@@ -112,7 +110,7 @@ function checkCurrentTheme() {
       cardText.style.color = '#aaa';
     });
     cards.forEach((card) => {
-      card.className = 'card mb-3';
+      card.className = 'card mb-3 ml-3 mr-3';
     });
     listItems.forEach((listItem) => {
       listItem.style.backgroundColor = '#32383e';
@@ -122,20 +120,3 @@ function checkCurrentTheme() {
     localStorage.setItem('theme', 'dark');
   }
 }
-
-// Mobile friendly menu?
-
-// let navbarToggler = document.getElementsByClassName('.navbar-toggler');
-
-// if (
-//   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-//     navigator.userAgent
-//   )
-// ) {
-//   // true for mobile device
-//   console.log('mobile');
-//   navbarToggler.addEventListener('click', () => {});
-// } else {
-//   // false for not mobile device
-//   console.log('not mobile');
-// }
