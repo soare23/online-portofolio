@@ -4,6 +4,8 @@ let switchThemeBody = document.getElementById('switch-theme');
 let switchThemeBtn = document.getElementById('switchButton');
 let body = document.getElementById('body');
 let navBar = document.getElementById('navbar');
+let switchThemeText = document.getElementById('switchThemeText');
+let homeBtnText = document.getElementById('homeBtnText');
 let greeting = document.getElementById('greeting');
 let jumbotron = document.getElementById('jumbotron');
 let submitBtn = document.getElementById('submit_button');
@@ -17,6 +19,8 @@ function checkCurrentTheme() {
   if (localStorage.getItem('theme') == 'white') {
     body.style.backgroundColor = '#fcfff7';
     navBar.className = 'navbar navbar-expand-lg navbar-dark bg-info';
+    switchThemeText.style.color = 'white';
+    homeBtnText.style.color = 'white';
     greeting.style.color = '#5bc0de !important';
     jumbotron.style.border = 'none';
     jumbotron.style.backgroundColor = '#fcfff7';
@@ -27,6 +31,8 @@ function checkCurrentTheme() {
   } else {
     body.style.backgroundColor = '#272b30';
     navBar.className = 'navbar navbar-expand-lg navbar-light bg-light';
+    switchThemeText.style.color = 'black';
+    homeBtnText.style.color = 'black';
     greeting.style.color = '#7a8288';
     // jumbotron.style.border = 'none';
     jumbotron.style.backgroundColor = '#1c1e22';
@@ -48,6 +54,8 @@ function changeTheme() {
   if (localStorage.getItem('theme') == 'white') {
     body.style.backgroundColor = '#272b30';
     navBar.className = 'navbar navbar-expand-lg navbar-light bg-light';
+    switchThemeText.style.color = 'black';
+    homeBtnText.style.color = 'black';
     greeting.style.color = '#7a8288';
     jumbotron.style.border = 'none';
     jumbotron.style.backgroundColor = '#1c1e22';
@@ -59,6 +67,8 @@ function changeTheme() {
   } else {
     body.style.backgroundColor = '#fcfff7';
     navBar.className = 'navbar navbar-expand-lg navbar-dark bg-info';
+    switchThemeText.style.color = 'white';
+    homeBtnText.style.color = 'white';
     greeting.style.color = '#5bc0de !important';
     jumbotron.style.border = 'none';
     jumbotron.style.backgroundColor = '#fcfff7';
