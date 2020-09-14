@@ -12,4 +12,5 @@
 
 .row {
   max-width: 100% !important;
+  margin-left: 0px !important;
 }
