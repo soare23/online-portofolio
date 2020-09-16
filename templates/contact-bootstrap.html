@@ -68,7 +68,7 @@
     {% with messages = get_flashed_messages() %}
           {% if messages %}
             {% for message in messages %}
-              <div class="alert alert-dismissible alert-success success-message">
+              <div class="alert alert-success success-message" id="contact_alert">
                 <p style="padding:auto;">{{ message }}</p>
               </div>
             {% endfor %}
