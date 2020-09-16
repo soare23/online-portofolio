@@ -9,10 +9,25 @@ let homeBtnText = document.getElementById('homeBtnText');
 let greeting = document.getElementById('greeting');
 let jumbotron = document.getElementById('jumbotron');
 let submitBtn = document.getElementById('submit_button');
+let contactAlert = document.getElementById('contact_alert');
 let footer = document.getElementById('footer');
 
 // Call the function when page loads
 window.onload = checkCurrentTheme();
+
+//Make the alert dissapear after 3 seconds
+console.log(contactAlert);
+
+const hideTimeout = 3000; //how many ms to wait before hiding after displaying
+
+function customAlert() {
+  //set up a timer to hide it, a.k.a a setTimeout()
+  setTimeout(function () {
+    $('.alert').remove();
+  }, hideTimeout);
+}
+
+customAlert();
 
 // Function that checks what is the general theme and changes it to it
 function checkCurrentTheme() {
