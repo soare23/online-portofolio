@@ -35,3 +35,14 @@ body {
   margin: auto;
   width: 50%;
 }
+
+.alert {
+  border-style: solid !important;
+  width: 350px !important;
+  max-width: 100% !important;
+  border-radius: 10px !important;
+}
+
+.alert p {
+  margin: auto !important;
+}
