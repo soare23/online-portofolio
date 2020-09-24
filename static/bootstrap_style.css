@@ -14,3 +14,25 @@
   max-width: 100% !important;
   margin-left: 0px !important;
 }
+
+.list-group-item {
+  text-align: center !important;
+}
+
+.card {
+  color: var(--white);
+}
+
+.card-text {
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 100%;
+  padding: 10px;
+}
