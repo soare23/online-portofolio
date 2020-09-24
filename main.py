@@ -29,7 +29,6 @@ def contact_me():
             email_to_send = userEmail
             msg = f'''Subject: {subject}
 
-
                 From: {email_to_send}
                 Sender name: {sender}
 
@@ -76,5 +75,5 @@ def exchange_rate():
 
 
 if __name__ == '__main__':
-    app.debug = False
+    app.debug = True
     app.run()
