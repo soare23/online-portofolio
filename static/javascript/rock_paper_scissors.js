@@ -82,6 +82,8 @@ function compareChoices() {
 function win() {
   if (user_score.innerHTML === '5') {
     alert('User Wins');
+    user_count = 0;
+    comp_count = 0;
     user_score.innerHTML = 0;
     comp_score.innerHTML = 0;
     document.getElementById('user_image').src =
@@ -90,6 +92,8 @@ function win() {
       '/static/rock_paper_scissors_imgs//rock_choice.png';
   } else if (comp_score.innerHTML === '5') {
     alert('Computer Wins');
+    user_count = 0;
+    comp_count = 0;
     user_score.innerHTML = 0;
     comp_score.innerHTML = 0;
     document.getElementById('user_image').src =
@@ -98,15 +102,5 @@ function win() {
       '/static/rock_paper_scissors_imgs//rock_choice.png';
   }
 }
-
-// document.addEventListener("keypress", function () {
-//   function initGame() {
-//     compRandomChoice();
-//     playerChoiceFunction();
-//     compareChoices();
-//     console.log(playerChoice);
-//     console.log(comp);
-//   }
-// });
 
 playerChoiceFunction();
