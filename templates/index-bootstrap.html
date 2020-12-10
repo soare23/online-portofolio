@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/bootstrap_style.css" />
-    <link rel="stylesheet" href="/static/footer.css">
+    <link rel="stylesheet" href="/static/footer.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -46,200 +46,332 @@
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" style="margin: auto">
-            <div class="form-group" style="margin: auto; padding:10px">
+            <div class="form-group" style="margin: auto; padding: 10px">
               <div class="custom-control custom-switch" id="switch-theme-body">
-                <input type="checkbox" class="custom-control-input" id="switchButton" checked="">
-                <label class="custom-control-label" for="switchButton" style="color:black ; cursor: pointer;" id="switchThemeText">Switch Theme</label>
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="switchButton"
+                  checked=""
+                />
+                <label
+                  class="custom-control-label"
+                  for="switchButton"
+                  style="color: black; cursor: pointer"
+                  id="switchThemeText"
+                  >Switch Theme</label
+                >
               </div>
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#" style="color:white">Home</a>
+            <a class="nav-link" href="#" style="color: white">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact" style="color:black" id="contactMeText">Contact me</a>
+            <a
+              class="nav-link"
+              href="/contact"
+              style="color: black"
+              id="contactMeText"
+              >Contact me</a
+            >
           </li>
         </ul>
       </div>
     </nav>
     <div class="jumbotron" id="jumbotron">
-      <h1 class="display-3" id="greeting">Hi <br>I am Soare,</h1>
+      <h1 class="display-3" id="greeting">Hi <br />I am Sorin,</h1>
     </div>
-    <h2 class="about">About me</h2>
-    <hr style="background-color: #e9ecef;">
+    <h2 class="about" style="font-size: 56px">About me</h2>
+    <hr style="background-color: #e9ecef" />
     <div>
-      <h4 class="about card text-muted bg-dark mb-3" id="about_me">
-        In February 2020 I decided to give up on my sales career and become
-        a full stack developer. So far the technologies that I am familiar with
-        are Python, Flask, HTML/CSS, JavaScript and PostgreSQL. <br /><br />
-        I have recently started learning React and you can actually see my first project below.
-        <br /><br />
-        My short term goal is to join a big company where I can grow and 
-        develop. As a long term goal, I would like to combine my sales knowledge
-        with my newly acquired IT skills and become a successful freelancer
-        either by myself or by owning a small company and building projects.
+      <h4 class="about card bg-dark mb-3" id="about_me" style="color: #dee2e6">
+        <p>
+          In February 2020 I decided to give up on my sales career and become a
+          full stack developer.
+        </p>
+
+        <p>At this moment I am familiar with the following:</p>
+        <br />
+
+        <ul class="skills">
+          <li>Python</li>
+          <li>Flask</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>PostgreSQL</li>
+          <li>React</li>
+          <li>Python</li>
+          <li>GitHub</li>
+          <li>Bootstrap</li>
+          <li>APIs</li>
+          <li>NPM</li>
+          <li>Maven</li>
+          <li>Servlets</li>
+          <li>Spring</li>
+          <li>Thymeleaf</li>
+        </ul>
+        <br />
+        <p>
+          I'm a natural problem solver with excellent soft skills, thanks to my
+          5 years experience in Sales.
+        </p>
+
+        <p>
+          My short term goal is to join a company where I can grow and develop.
+          As a long term goal, I would like to combine my sales knowledge with
+          my newly acquired IT skills and become a successful freelancer either
+          by myself or by owning a company.
+        </p>
       </h4>
     </div>
-    <h3 class="display-4">Take a look at some of my projects</h3>
+    <h3 class="display-4" style="color: #dee2e6; text-align: center">
+      Take a look at some of my projects
+    </h3>
+    <div class="projects-about-container">
+      <p>
+        Below is a brief list of some of the projects I have completed. All of
+        them are personal projects and learning exercises.
+      </p>
+      <p>
+        Each one includes a link to view the live site and to the relevant
+        GitHub repository where you can check out the code.
+      </p>
+    </div>
     <div class="row mb-5">
       <div class="col-md">
         <div class="card mb-3 ml-3 mr-3" id="card">
-              <h3 class="card-header" style="text-align: center" id="card-header">
-              Rock, Paper, Scissors
-              </h3>
-              <img
-              style="border: solid; padding: 0; border-color: var(--info); border-radius: 5px;"
-              src="/static/rock_paper_scissors_imgs/game_presentation4.png"
-              alt="Card image"
-              />
-              <div class="card-body">
-              <p class="card-text" id="card-text">
-                Simple rock, paper, scissors game made in JavaScript with HTML/CSS.
-              </p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <a href="/rock_paper_scissors" target="_blank"><li class="list-group-item" id='list-group-item'>Play</li></a>
-                <a href="https://github.com/soare23/rock_paper_soare" target="_blank"><li class="list-group-item" id='list-group-item'>See code</li></a>
-              </ul>
+          <h3 class="card-header" style="text-align: center" id="card-header">
+            Rock, Paper, Scissors
+          </h3>
+          <img
+            style="
+              border: solid;
+              padding: 0;
+              border-color: var(--info);
+              border-radius: 5px;
+            "
+            src="/static/rock_paper_scissors_imgs/game_presentation4.png"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <p class="card-text" id="card-text">
+              Simple rock, paper, scissors game made in JavaScript with
+              HTML/CSS.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <a href="/rock_paper_scissors" target="_blank"
+              ><li class="list-group-item" id="list-group-item">Play</li></a
+            >
+            <a
+              href="https://github.com/soare23/rock_paper_soare"
+              target="_blank"
+              ><li class="list-group-item" id="list-group-item">See code</li></a
+            >
+          </ul>
         </div>
       </div>
       <div class="col-md">
         <div class="card mb-3 ml-3 mr-3" id="card">
-              <h3 class="card-header" style="text-align: center" id="card-header">
-              Trivia Night
-              </h3>
-              <img
-              style="border: solid; padding: 0; border-color: var(--info); border-radius: 5px;"
-              src="/static/imgs/trivianight.png"
-              alt="Card image"
-              />
-              <div class="card-body">
-              <p class="card-text" id="card-text">
-                  Trivia game built with JS/Python/PostregSQL.
-              </p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <a href="https://soaretrivia.herokuapp.com" target="_blank"><li class="list-group-item" id='list-group-item'>Play</li></a>
-                <a href="https://github.com/soare23/trivia" target="_blank"><li class="list-group-item" id='list-group-item'>See Code</li></a>
-              </ul>
+          <h3 class="card-header" style="text-align: center" id="card-header">
+            Trivia Night
+          </h3>
+          <img
+            style="
+              border: solid;
+              padding: 0;
+              border-color: var(--info);
+              border-radius: 5px;
+            "
+            src="/static/imgs/trivianight.png"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <p class="card-text" id="card-text">
+              Trivia game built with JS/Python/PostregSQL.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <a href="https://soaretrivia.herokuapp.com" target="_blank"
+              ><li class="list-group-item" id="list-group-item">Play</li></a
+            >
+            <a href="https://github.com/soare23/trivia" target="_blank"
+              ><li class="list-group-item" id="list-group-item">See Code</li></a
+            >
+          </ul>
         </div>
       </div>
       <div class="col-md">
         <div class="card mb-3 ml-3 mr-3" id="card">
-              <h3 class="card-header" style="text-align: center" id="card-header">
-              Pokedex
-              </h3>
-              <img
-              style="border: solid; padding: 0; border-color: var(--info); border-radius: 5px;"
-              src="/static/imgs/pokedex.png"
-              alt="Card image"
-              />
-              <div class="card-body">
-              <p class="card-text" id="card-text">
-                  Pokedex app using React and Pokemon API.
-              </p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <a href="https://pokedexreact23.netlify.app" target="_blank"><li class="list-group-item" id='list-group-item'>Check it</li></a>
-                <a href="https://github.com/soare23/pokedex_react" target="_blank"><li class="list-group-item" id='list-group-item'>See Code</li></a>
-              </ul>
+          <h3 class="card-header" style="text-align: center" id="card-header">
+            Pokedex
+          </h3>
+          <img
+            style="
+              border: solid;
+              padding: 0;
+              border-color: var(--info);
+              border-radius: 5px;
+            "
+            src="/static/imgs/pokedex.png"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <p class="card-text" id="card-text">
+              Pokedex app using React and Pokemon API.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <a href="https://pokedexreact23.netlify.app" target="_blank"
+              ><li class="list-group-item" id="list-group-item">Check it</li></a
+            >
+            <a href="https://github.com/soare23/pokedex_react" target="_blank"
+              ><li class="list-group-item" id="list-group-item">See Code</li></a
+            >
+          </ul>
         </div>
       </div>
-  </div>
-      <div class="row mb-5">
-        <div class="col-md">
-          <div class="card mb-3 ml-3 mr-3" id="card">
-                <h3 class="card-header" style="text-align: center" id="card-header">
-                Simple Form Validator
-                </h3>
-                <img
-                style="border: solid; padding: 0; border-color: var(--info); border-radius: 5px;"
-                src="/static/simple_form_validator_imgs/form_presentation.png"
-                alt="Card image"
-                />
-                <div class="card-body">
-                <p class="card-text" id="card-text">
-                  Simple JavaScript form validator.
-                </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <a href="/form_validator" target="_blank"><li class="list-group-item" id='list-group-item'>Try it</li></a>
-                  <a href="https://github.com/soare23/form_validator" target="_blank"><li class="list-group-item" id='list-group-item'>See code</li></a>
-                </ul>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md">
+        <div class="card mb-3 ml-3 mr-3" id="card">
+          <h3 class="card-header" style="text-align: center" id="card-header">
+            Simple Form Validator
+          </h3>
+          <img
+            style="
+              border: solid;
+              padding: 0;
+              border-color: var(--info);
+              border-radius: 5px;
+            "
+            src="/static/simple_form_validator_imgs/form_presentation.png"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <p class="card-text" id="card-text">
+              Simple JavaScript form validator.
+            </p>
           </div>
-        </div>
-        <div class="col-md">
-          <div class="card mb-3 ml-3 mr-3" id="card">
-                <h3 class="card-header" style="text-align: center" id="card-header">
-                Currency Exchange
-                </h3>
-                <img
-                style="border: solid; padding: 0; border-color: var(--info); border-radius: 5px;"
-                src="/static/exchange_rate_imgs/exchange_rate_presentation2.png"
-                alt="Card image"
-                />
-                <div class="card-body">
-                <p class="card-text" id="card-text">
-                  Currency exchange using API and JavaScript.
-                </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <a href="/exchange_rate" target="_blank"><li class="list-group-item" id='list-group-item'>Try it</li></a>
-                  <a href="https://github.com/soare23/exchange_rate" target="_blank"><li class="list-group-item" id='list-group-item'>See code</li></a>
-                </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card mb-3 ml-3 mr-3" id="card">
-                <h3 class="card-header" style="text-align: center" id="card-header">
-                Bootcamp Projects
-                </h3>
-                <img
-                src="/static/imgs/full_stack_logo.png"
-                alt="Card image"
-                />
-                <div class="card-body">
-                <p class="card-text" id="card-text">
-                    Bootcamp full-stack projects. Not deployed, but check the code below.
-                </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                <a href="https://github.com/soare23/API_Wars" target="_blank"><li class="list-group-item" id='list-group-item'>API Wars</li></a>
-                <a href="https://github.com/soare23/IMDB-Like_clone" target="_blank"><li class="list-group-item" id='list-group-item'>IMDB-like Clone</li></a>
-                </ul>
-          </div>
+          <ul class="list-group list-group-flush">
+            <a href="/form_validator" target="_blank"
+              ><li class="list-group-item" id="list-group-item">Try it</li></a
+            >
+            <a href="https://github.com/soare23/form_validator" target="_blank"
+              ><li class="list-group-item" id="list-group-item">See code</li></a
+            >
+          </ul>
         </div>
       </div>
-
-
-    <div class="navbar navbar-light bg-light footer" id="footer">
-        <a class="navbar-brand"
-          href="https://www.codewars.com/users/soare23"
-          target="_blank"
-          class="btn contact-details"
-          ><span class="iconify" data-icon="simple-icons:codewars" data-inline="false"></span></i> CodeWars</a
-        >
-        <a class="navbar-brand"
-          id="profile-link"
-          href="https://github.com/soare23"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a class="navbar-brand"
-          href="mailto:toma.mihai.sorin23@gmail.com"
-          class="btn contact-details"
-          ><i class="fas fa-at"></i> Send a mail</a
-        >
-        <a class="navbar-brand" href="tel:+40726811097" class="btn contact-details"
-          ><i class="fas fa-mobile-alt"></i> Call me</a
-        >
-
+      <div class="col-md">
+        <div class="card mb-3 ml-3 mr-3" id="card">
+          <h3 class="card-header" style="text-align: center" id="card-header">
+            Currency Exchange
+          </h3>
+          <img
+            style="
+              border: solid;
+              padding: 0;
+              border-color: var(--info);
+              border-radius: 5px;
+            "
+            src="/static/exchange_rate_imgs/exchange_rate_presentation2.png"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <p class="card-text" id="card-text">
+              Currency exchange using API and JavaScript.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <a href="/exchange_rate" target="_blank"
+              ><li class="list-group-item" id="list-group-item">Try it</li></a
+            >
+            <a href="https://github.com/soare23/exchange_rate" target="_blank"
+              ><li class="list-group-item" id="list-group-item">See code</li></a
+            >
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card mb-3 ml-3 mr-3" id="card">
+          <h3 class="card-header" style="text-align: center" id="card-header">
+            Bootcamp Projects
+          </h3>
+          <img src="/static/imgs/full_stack_logo.png" alt="Card image" />
+          <div class="card-body">
+            <p class="card-text" id="card-text">
+              Bootcamp full-stack projects. Not deployed, but check the code
+              below.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <a href="https://github.com/soare23/API_Wars" target="_blank"
+              ><li class="list-group-item" id="list-group-item">API Wars</li></a
+            >
+            <a href="https://github.com/soare23/IMDB-Like_clone" target="_blank"
+              ><li class="list-group-item" id="list-group-item">
+                IMDB-like Clone
+              </li></a
+            >
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <div class="navbar navbar-light bg-light footer" id="footer">
+      <a
+        class="navbar-brand"
+        href="https://www.codewars.com/users/soare23"
+        target="_blank"
+        class="btn contact-details"
+        ><span
+          class="iconify"
+          data-icon="simple-icons:codewars"
+          data-inline="false"
+        ></span>
+        CodeWars</a
+      >
+      <a
+        class="navbar-brand"
+        id="profile-link"
+        href="https://github.com/soare23"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-github"></i> GitHub</a
+      >
+      <a
+        class="navbar-brand"
+        href="mailto:toma.mihai.sorin23@gmail.com"
+        class="btn contact-details"
+        ><i class="fas fa-at"></i> Send a mail</a
+      >
+      <a
+        class="navbar-brand"
+        href="tel:+40726811097"
+        class="btn contact-details"
+        ><i class="fas fa-mobile-alt"></i> Call me</a
+      >
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
     <script src="/static/switch_theme_index.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </body>
