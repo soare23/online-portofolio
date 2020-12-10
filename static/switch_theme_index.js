@@ -52,9 +52,9 @@ function changeTheme() {
     navBar.className = 'navbar navbar-expand-lg navbar-light bg-light';
     switchThemeText.style.color = 'black';
     contactMeText.style.color = 'black';
-    greeting.style.color = '#7a8288';
+    greeting.style.color = '#dee2e6';
     jumbotron.style.backgroundColor = '#1c1e22';
-    aboutMe.className = 'about card text-muted bg-dark mb-3';
+    aboutMe.className = 'about card bg-dark mb-3';
     cardHeaders.forEach((cardHeader) => {
       cardHeader.style.backgroundColor = '#515960';
     });
@@ -82,7 +82,7 @@ function checkCurrentTheme() {
     navBar.className = 'navbar navbar-expand-lg navbar-dark bg-info';
     switchThemeText.style.color = 'white';
     contactMeText.style.color = 'white';
-    greeting.style.color = '#5bc0de';
+    greeting.style.color = '#dee2e6';
     jumbotron.style.border = 'none';
     jumbotron.style.backgroundColor = '#fcfff7';
     console.log(greeting.nextElementSibling);
@@ -107,9 +107,9 @@ function checkCurrentTheme() {
     navBar.className = 'navbar navbar-expand-lg navbar-light bg-light';
     switchThemeText.style.color = 'black';
     contactMeText.style.color = 'black';
-    greeting.style.color = '#7a8288';
+    greeting.style.color = '#dee2e6';
     jumbotron.style.backgroundColor = '#1c1e22';
-    aboutMe.className = 'about card text-muted bg-dark mb-3';
+    aboutMe.className = 'about card bg-dark mb-3';
     cardHeaders.forEach((cardHeader) => {
       cardHeader.style.backgroundColor = '#515960';
     });
