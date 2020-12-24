@@ -54,11 +54,17 @@
 
 .list-group-item {
   text-align: center !important;
+  border: 1px solid rgba(0, 0, 0, 0.322) !important;
 }
 
 .card {
   color: var(--white);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border: none !important;
+}
+
+.card-header {
+  border-bottom: none !important;
 }
 
 .card:hover {
@@ -67,6 +73,7 @@
 
 .card-text {
   text-align: center;
+  /* color: rgba(255, 255, 255, 0.87) !important; */
 }
 
 img {
