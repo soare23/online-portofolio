@@ -75,5 +75,5 @@ def exchange_rate():
 
 
 if __name__ == '__main__':
-    app.debug = False
+    app.debug = True
     app.run()
