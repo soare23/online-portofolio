@@ -7,5 +7,3 @@
 # Removed large file
 
 # Updated Heroku deploy - 22.02.2021
-
-# Updated Heroku deploy - 22.02.2021 #2
