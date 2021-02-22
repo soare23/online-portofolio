@@ -91,3 +91,7 @@ img {
   display: flex;
   justify-content: center;
 }
+
+.techonolgy-name {
+  color: coral;
+}
