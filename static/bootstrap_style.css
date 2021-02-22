@@ -61,6 +61,7 @@
   color: var(--white);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   border: none !important;
+  height: 100% !important;
 }
 
 .card-header {
@@ -84,4 +85,9 @@ img {
   margin-top: 20px;
   max-width: 100%;
   padding: 10px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
 }
