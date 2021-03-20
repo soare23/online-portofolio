@@ -41,17 +41,17 @@
 .resume-download-button {
   padding: 10px;
   color: white;
-  background-color: coral;
+  background-color: #4a4a4adb;
   margin: 2px;
   border: solid aliceblue;
   border-radius: 5px;
 }
 
-.resume-download-button a{
+.resume-download-button a {
   text-decoration: none !important;
 }
 
-.resume-download-button:hover{
+.resume-download-button:hover {
   background-color: rgb(248, 93, 36);
 }
 
